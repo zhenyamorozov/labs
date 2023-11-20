@@ -1,0 +1,1 @@
+This is a collection of **very** sketchy basic code samples mostly created ad-hoc during student classes.

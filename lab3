@@ -1,0 +1,21 @@
+val = "cool"
+
+def func(par1, par2, par3=3):
+    global val
+    val = "not cool"
+    print("Hello "+val, end=" ")
+    sum1 = par1 + par2 + par3
+    return sum1
+
+
+#print(sum1)
+
+print(func(1,2,5))
+print(func(1,2))
+print(func(1,2, par3=4))
+#print(func(1))
+print(func(par1=10, par2=20, par3=30))
+#print(func(par3=3, 1,2))
+print(func(par2=10, par1=20))
+
+print(val)
