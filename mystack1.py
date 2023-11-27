@@ -16,16 +16,16 @@ class SumStack(Stack):
         self.__sum = 0
     
     def push(self, val):
-        self.__sum += val
         Stack.push(self, val)
+        self.__sum += val
     
     def pop(self):
         val = Stack.pop(self)
         self.__sum -= val
         return val
 
-    def __str__(self):
-        return f"This awesome stack contains {self.__stack}. The sum is {self.__sum}"
+    # def __str__(self):
+    #     return f"This awesome stack contains {self.__stack}. The sum is {self.__sum}"
 
 
 
@@ -35,5 +35,7 @@ mystack.push(2)
 mystack.push(3)
 
 print(mystack)
+
+print(mystack.__module__)
 
 pass

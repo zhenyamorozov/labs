@@ -20,8 +20,8 @@ class SumStack(Stack):
         self.__sum = 0
         
     def push(self, val):
-        self.__sum += val
         Stack.push(self, val)
+        self.__sum += val
 
     def pop(self):
         val = Stack.pop(self)
