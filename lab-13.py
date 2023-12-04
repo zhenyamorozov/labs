@@ -22,7 +22,7 @@ print(next(gen_odds()))
 
 
 # any() and all()
-print( any(letter == 't' for letter in 'stake') )
+print( any( letter == 't' for letter in 'stake' ) )
 
 
 # sets
